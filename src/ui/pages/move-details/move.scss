@@ -1,0 +1,107 @@
+.move-frame-section {
+    padding: 0 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .img-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: auto;
+            height: 500px;
+        }
+    }
+    h3 {
+        margin-bottom: 30px;
+        position: relative;
+        span {
+            position: absolute;
+            left: 200px;
+        }
+    }
+}
+// ======================= FORM CSS START =======================
+.form-main-secton{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+    background-color: rgba(24, 23, 23,.8);
+    text-align: center;
+    form{
+        padding: 5%;
+        margin: auto;
+        width: clamp(200px,90vw,1020px);
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: space-between;
+        gap: 5%;
+        flex-wrap: wrap;
+        position: relative;
+        img{
+            position: absolute;
+            right: 20px;
+            top: 30px;
+            width: 40px;
+            height: 40px;
+            mix-blend-mode: multiply;
+            object-fit: contain;
+            cursor: pointer;
+        }
+
+    }
+
+}
+.input-frame {
+    width: 100%;
+    max-width: 330px;
+    margin:20px 0 ;
+    label {
+        font-size: 19px;
+        font-weight: 500px;
+        line-height: 27px;
+        display: block;
+        text-align: start;
+    }
+}
+.input-box {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 27px;
+    box-shadow: 0 0 4px rgb(103, 102, 102,.5);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    margin-top: 6px;
+    
+}
+
+// ======================= FORM CSS END =======================
+
+
+@media (max-width:900px) {
+    .move-frame-section{
+        flex-wrap: wrap-reverse;
+        gap: 40px;
+    }
+    .w-51{
+        width: 100vw !important;
+    }
+    .form-main-secton{
+        padding: 2%;
+        overflow: scroll;
+        img{
+            top: 10px !important;
+        }
+        form{
+            width: 98%;
+        }
+    }
+}

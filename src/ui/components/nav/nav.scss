@@ -1,0 +1,60 @@
+.navbar-section {
+    height: 102px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.nav-frame {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo-serch-frame {
+        display: flex;
+        align-items: center;
+        gap: 3vw;
+        h4 {
+            margin-left: 2vw;
+            color: aqua;
+            font-size: 40px;
+            line-height: 50px;
+            font-weight: 900;
+            margin: 0;
+        }
+        .serch-box {
+            width: clamp(330px,30vw,450px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: whitesmoke;
+            border-radius: 20px;
+            padding: 10px 19px;
+            overflow: hidden;
+            input {
+                width: 100%;
+                height: auto;
+                padding: 6px 14px;
+                font-size: 19px;
+                line-height: 27px;
+                font-weight: 500;
+                color: #2F2E33;
+                border: none;
+                outline: none;
+
+            }
+
+        }
+    }
+
+    button {
+        padding: 9px 12px;
+        font-size: 22px;
+        line-height: 27px;
+        font-weight: 500;
+        color: white;
+        background-color: red;
+        border-radius: 10px;
+        box-shadow: 0 0 8px whitesmoke;
+        cursor: pointer;
+    }
+}
